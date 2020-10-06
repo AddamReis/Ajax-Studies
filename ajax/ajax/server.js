@@ -7,6 +7,4 @@ app.use(express.static('.')) //provém os arquivos estáticos da aplicação a p
 app.use(bodyParser.urlencoded({ extended: true })) //se receber um submit de fomulário transforma em objeto
 app.use(bodyParser.json()) //se receber json transforma em objeto
 
-app.get('/teste', (req, res) => res.send('Ok'))
-
 app.listen(8081, () => console.log('Executando...'))
